@@ -1,0 +1,128 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700&display=swap');
+
+body{
+    font-family:'dosis' sans-serif;
+
+}
+/* bacground image */
+#container-fluid{
+    background: url("img/c.png") no-repeat;
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.costom-nav{
+    padding: 35px 0;
+}
+.costom-nav>a{
+    text-transform: uppercase;
+    color: #111;
+    transition: .5s all ease;
+    font-weight: 700;
+}
+
+.costom-nav>a:hover{
+    color: #5b2a9c !important;
+    transform: scale(1.2);
+
+}
+#navbarNav .nav-link{
+    color: #111;
+    padding: 6px 25px;
+    transition: .5s all ease;
+    text-transform: uppercase;
+
+}
+#navbarNav .nav-link:hover{
+    color:#5b2a9c;
+    box-shadow: 1px 1px 2px #c9c9c9;
+    transform: scale(1.1);
+}
+.page-text h2{
+    display: inline-block;
+    color: #111;
+    font-size: 55px;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    word-spacing: nowrap;
+    animation-delay: .3s;
+    animation-direction: 1s;
+    }
+.page-text h2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    background: #74ec00;
+    z-index: -1;
+    transition: .5s all cubic-bezier(0.51, 1.35, 0.51, 1.35);
+
+}
+.page-text h2:hover::before{
+    left: 50%;
+}
+.page-text p{
+    color: #333;
+    text-align: justify;
+    padding: 30px 0;
+    animation-delay: .3s;
+    animation-duration: 1.25s;
+}
+.page-text a.shop-btn{
+    display: inline-block;
+    padding: 7px 30px;
+    text-decoration: none;
+    background: #74ec00;
+    border: 2px solid transparent;
+    color: #111;
+    border-radius: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.page-text a.shop-btn:hover{
+    background: none;
+    border: 2px solid #74ec00;
+    color: #74ec00;
+
+}
+.social{
+    margin-right: 60px;
+    margin-bottom: 50px;
+    animation-delay: .5s;
+    margin-top: 30px;
+}
+.social a{
+    color: #111;
+    margin-right: 15px;
+    font-size: 26px;
+
+}
+.costom-section .banner{
+    animation-delay: .3s;
+    animation-duration: 1.5s;}
+
+@media screen and (max-width:991.98px){
+    .page-text h2{
+        font-size: 48px; 
+    }
+}
+@media screen and (max-width:767.98px){
+    .page-text h2{
+        flex-direction: column-reverse;
+    }
+    .banner{
+        margin-bottom:50px;
+     }
+}
+
+@media screen and (max-width: 480px){
+    .page-text h2{
+        font-size: 32px; 
+    }
+}
